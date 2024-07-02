@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Dashboard } from './components/Dashboard';
 
 const rootDomNode = document.getElementById('app');
 
@@ -10,7 +11,7 @@ if (!rootDomNode) {
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <div>Hello World</div>
+        element: <Dashboard />
     }
 ]);
 
